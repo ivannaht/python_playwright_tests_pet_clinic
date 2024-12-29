@@ -1,21 +1,25 @@
 import pytest
+
 from playwright.sync_api import expect
 
 from pages.page_objects.new_owner_page import NewOwnerPage
 
+import re
 from faker import Faker
 
 
 @pytest.fixture(scope="function")
 def owner_data():
-    fake = Faker()
+    fake = Faker('en_US')
+
+    digit_only_phone_number = re.sub(r'\D', '', fake.phone_number())[:10]
 
     return {
         'first_name': fake.first_name(),
         'last_name': fake.last_name(),
         'address': fake.address(),
         'city': fake.city(),
-        'phone_number': fake.phone_number()
+        'phone_number': digit_only_phone_number
     }
 
 
