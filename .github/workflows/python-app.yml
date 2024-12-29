@@ -38,11 +38,16 @@ jobs:
         run: |
           pytest --browser chromium --alluredir=allure-results
 
-      - name:  Download and Setup Allure
+      - name:  List Allure results directory (for debugging)
+        run: |
+          echo "Contents of allure-results directory:"
+          dir allure-results
+
+      - name: Download and Setup Allure
         run: |
           Invoke-WebRequest -Uri "https://github.com/allure-framework/allure2/releases/download/2.21.0/allure-2.21.0.zip" -OutFile "allure.zip"
           Expand-Archive -Path "allure.zip" -DestinationPath "C:\allure"
-          echo "C:\allure\allure-2.21.0\bin" >> $env:GITHUB_PATH
+          echo "C:\allure\allure-2.21.0\bin" | Out-File -FilePath $env:GITHUB_PATH -Encoding utf8 -Append
 
       - name: Generate Allure report
         run: |
@@ -50,6 +55,7 @@ jobs:
 
       - name: List Allure report directory (for debugging)
         run: |
+          echo "Contents of allure-report directory:"
           dir allure-report
 
       - name: Upload Allure report
