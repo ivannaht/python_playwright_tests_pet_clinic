@@ -9,5 +9,7 @@ Step 3: Install Dependencies from requirements.txt
 pip install -r requirements.txt
 
 Step 4: Create the YAML file from GitHub Actions
-Save the YAML content to a file named playwright.yml in your project directory.
+Save the YAML content to a file named python-app.yml.
 
+Step 5: Install Allure dependencies
+pip install allure-pytest
