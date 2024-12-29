@@ -13,3 +13,13 @@ Save the YAML content to a file named python-app.yml.
 
 Step 5: Install Allure dependencies
 pip install allure-pytest
+
+Step 6: Run the tests with Allure results:
+pytest --browser chromium --alluredir=allure-results
+
+Step 7: Generate Allure Report
+allure generate allure-results --clean -o allure-report
+
+Step 5: View Allure Report
+allure open allure-report
+
