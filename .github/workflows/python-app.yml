@@ -10,7 +10,7 @@ on:
 
 jobs:
   test:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
 
     strategy:
       matrix:
@@ -28,13 +28,13 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install pytest pytest-playwright
+          pip install pytest pytest-playwright allure-pytest
 
       - name: Install Playwright browsers
         run: |
           python -m playwright install chromium
 
-      - name: Run Playwright tests
+      - name: Run Playwright tests with Allure
         run: |
           xvfb-run -a pytest --browser chromium --alluredir=allure-results
 
