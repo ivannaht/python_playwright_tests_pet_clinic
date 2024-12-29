@@ -36,7 +36,7 @@ jobs:
 
       - name: Run Playwright tests
         run: |
-          pytest
+          xvfb-run -a pytest --browser chromium
 
       - name: Upload test results
         if: always()
