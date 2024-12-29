@@ -4,10 +4,10 @@ from pages.page_objects.base_page import BasePage
 
 
 class NewOwnerPage(BasePage):
-    URL = 'https://spring-petclinic-clone-2024.azurewebsites.net/' + 'owners/new'
 
     def __init__(self, page: Page) -> None:
         super().__init__(page)
+        self.URL = super().URL + 'owners/new'
         self.first_name_input = page.locator("#firstName")
         self.last_name_input = page.locator("#lastName")
         self.address_input = page.locator("#address")
