@@ -40,3 +40,6 @@ mypy path/to/your/code
 Step 12: Documentation
 pip install sphinx
 sphinx-quickstart
+
+Step 13: Install the faker library
+pip install faker
