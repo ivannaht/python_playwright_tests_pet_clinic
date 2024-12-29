@@ -36,7 +36,7 @@ jobs:
 
       - name: Run Playwright tests with Allure
         run: |
-          xvfb-run -a pytest --browser chromium --alluredir=allure-results
+          pytest --browser chromium --headless --alluredir=allure-results
 
       - name: Install Allure
         run: |
