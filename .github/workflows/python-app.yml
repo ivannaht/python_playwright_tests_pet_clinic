@@ -38,9 +38,11 @@ jobs:
         run: |
           pytest --browser chromium --alluredir=allure-results
 
-      - name: Install Allure
+      - name: Download Allure
         run: |
-          choco install allure
+          Invoke-WebRequest -Uri "https://github.com/allure-framework/allure2/releases/download/2.21.0/allure-2.21.0.zip" -OutFile "allure.zip"
+          Expand-Archive -Path "allure.zip" -DestinationPath "C:\allure"
+          $env:Path += ";C:\allure\allure-2.21.0\bin"
 
       - name: Generate Allure report
         run: |
