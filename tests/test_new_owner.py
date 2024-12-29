@@ -13,4 +13,4 @@ def test_add_owner(new_owner_page: NewOwnerPage) -> None:
     new_owner_page.add_owner_button.click()
 
     expect(new_owner_page.success_message).to_be_visible()
-    expect(new_owner_page.success_message).to_have_text('New Owner Created')
+    expect(new_owner_page.success_message).to_have_text("New Owner Created")

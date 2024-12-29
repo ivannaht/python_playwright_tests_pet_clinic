@@ -20,6 +20,23 @@ pytest --browser chromium --alluredir=allure-results
 Step 7: Generate Allure Report
 allure generate allure-results --clean -o allure-report
 
-Step 5: View Allure Report
+Step 8: View Allure Report
 allure open allure-report
 
+Step 9: View downloaded Allure Report from GitHub actions
+go to Downloads and decompress allure-report zip file
+navigate to decompressed directory in terminal
+run command: allure open .
+
+Step 1o: Linting and Formatting
+pip install flake8 black
+flake8 path/to/your/code
+black path/to/your/code
+
+Step 11: Type Annotations
+pip install mypy
+mypy path/to/your/code
+
+Step 12: Documentation
+pip install sphinx
+sphinx-quickstart
