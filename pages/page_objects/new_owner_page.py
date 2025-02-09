@@ -14,3 +14,8 @@ class NewOwnerPage(BasePage):
         self.city_input = page.locator("#city")
         self.telephone_input = page.locator("#telephone")
         self.add_owner_button = page.get_by_role("button", name="Add Owner")
+        self.first_name_empty_error = page.locator('xpath=//*[@class="form-group has-error"][1]//span[2]')
+        self.last_name_empty_error = page.locator('xpath=//*[@class="form-group has-error"][2]//span[2]')
+        self.address_empty_error = page.locator('xpath=//*[@class="form-group has-error"][3]//span[2]')
+        self.city_empty_error = page.locator('xpath=//*[@class="form-group has-error"][4]//span[2]')
+        self.telephone_empty_error = page.locator('xpath=//*[@class="form-group has-error"][5]//span[2]')

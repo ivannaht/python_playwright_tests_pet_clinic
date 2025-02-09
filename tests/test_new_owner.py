@@ -9,7 +9,12 @@ from faker import Faker
 
 
 @pytest.fixture(scope="function")
-def owner_data():
+def load_page(new_owner_page: NewOwnerPage):
+    new_owner_page.load()
+
+
+@pytest.fixture(scope="function")
+def valid_owner_data():
     fake = Faker('en_US')
 
     digit_only_phone_number = re.sub(r'\D', '', fake.phone_number())[:10]
@@ -23,14 +28,39 @@ def owner_data():
     }
 
 
-def test_add_owner(new_owner_page: NewOwnerPage, owner_data) -> None:
-    new_owner_page.load()
-    new_owner_page.first_name_input.fill(owner_data['first_name'])
-    new_owner_page.last_name_input.fill(owner_data['last_name'])
-    new_owner_page.address_input.fill(owner_data['address'])
-    new_owner_page.city_input.fill(owner_data['city'])
-    new_owner_page.telephone_input.fill(owner_data['phone_number'])
+@pytest.fixture(scope="function")
+def invalid_empty_owner_data():
+    return {
+        'first_name': ' ',
+        'last_name': ' ',
+        'address': ' ',
+        'city': ' ',
+        'phone_number': ' '
+    }
+
+
+def test_add_owner_positive(new_owner_page: NewOwnerPage, load_page, valid_owner_data) -> None:
+    new_owner_page.first_name_input.fill(valid_owner_data['first_name'])
+    new_owner_page.last_name_input.fill(valid_owner_data['last_name'])
+    new_owner_page.address_input.fill(valid_owner_data['address'])
+    new_owner_page.city_input.fill(valid_owner_data['city'])
+    new_owner_page.telephone_input.fill(valid_owner_data['phone_number'])
     new_owner_page.add_owner_button.click()
 
     expect(new_owner_page.success_message).to_be_visible()
     expect(new_owner_page.success_message).to_have_text("New Owner Created")
+
+
+def test_add_owner_negative(new_owner_page: NewOwnerPage, load_page, invalid_empty_owner_data) -> None:
+    new_owner_page.first_name_input.fill(invalid_empty_owner_data['first_name'])
+    new_owner_page.last_name_input.fill(invalid_empty_owner_data['last_name'])
+    new_owner_page.address_input.fill(invalid_empty_owner_data['address'])
+    new_owner_page.city_input.fill(invalid_empty_owner_data['city'])
+    new_owner_page.telephone_input.fill(invalid_empty_owner_data['phone_number'])
+    new_owner_page.add_owner_button.click()
+
+    expect(new_owner_page.first_name_empty_error).to_have_text("must not be blank")
+    expect(new_owner_page.last_name_empty_error).to_have_text("must not be blank")
+    expect(new_owner_page.address_empty_error).to_have_text("must not be blank")
+    expect(new_owner_page.city_empty_error).to_have_text("must not be blank")
+    expect(new_owner_page.telephone_empty_error).to_contain_text("must not be blank")
