@@ -51,6 +51,5 @@ def test_search_owner_api(api_context: APIRequestContext, valid_owner_data):
     response = api_context.get(
         f'/owners?lastName={last_name}',
     )
-    print(valid_owner_data['lastName'])
 
     assert response.status == 200, f"Expected 200 status code but got {response.status}"
