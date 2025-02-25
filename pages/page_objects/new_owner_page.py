@@ -19,3 +19,19 @@ class NewOwnerPage(BasePage):
         self.address_empty_error = page.locator('xpath=//*[@class="form-group has-error"][3]//span[2]')
         self.city_empty_error = page.locator('xpath=//*[@class="form-group has-error"][4]//span[2]')
         self.telephone_empty_error = page.locator('xpath=//*[@class="form-group has-error"][5]//span[2]')
+
+    def load(self) -> None:
+        self.page.goto(self.URL)
+
+    def fill_owner_details(self, first_name: str, last_name: str, address: str, city: str, telephone: str) -> None:
+        self.first_name_input.fill(first_name)
+        self.last_name_input.fill(last_name)
+        self.address_input.fill(address)
+        self.city_input.fill(city)
+        self.telephone_input.fill(telephone)
+
+    def submit_form(self) -> None:
+        self.add_owner_button.click()
+
+    def is_add_owner_button_enabled(self) -> bool:
+        return self.add_owner_button.is_enabled()

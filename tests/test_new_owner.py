@@ -40,24 +40,27 @@ def invalid_empty_owner_data():
 
 
 def test_add_owner_positive(new_owner_page: NewOwnerPage, load_page, valid_owner_data) -> None:
-    new_owner_page.first_name_input.fill(valid_owner_data['first_name'])
-    new_owner_page.last_name_input.fill(valid_owner_data['last_name'])
-    new_owner_page.address_input.fill(valid_owner_data['address'])
-    new_owner_page.city_input.fill(valid_owner_data['city'])
-    new_owner_page.telephone_input.fill(valid_owner_data['phone_number'])
-    new_owner_page.add_owner_button.click()
+    new_owner_page.fill_owner_details(
+        valid_owner_data['first_name'],
+        valid_owner_data['last_name'],
+        valid_owner_data['address'],
+        valid_owner_data['city'],
+        valid_owner_data['phone_number']
+    )
+    new_owner_page.submit_form()
 
     expect(new_owner_page.success_message).to_be_visible()
     expect(new_owner_page.success_message).to_have_text("New Owner Created")
 
-
 def test_add_owner_negative(new_owner_page: NewOwnerPage, load_page, invalid_empty_owner_data) -> None:
-    new_owner_page.first_name_input.fill(invalid_empty_owner_data['first_name'])
-    new_owner_page.last_name_input.fill(invalid_empty_owner_data['last_name'])
-    new_owner_page.address_input.fill(invalid_empty_owner_data['address'])
-    new_owner_page.city_input.fill(invalid_empty_owner_data['city'])
-    new_owner_page.telephone_input.fill(invalid_empty_owner_data['phone_number'])
-    new_owner_page.add_owner_button.click()
+    new_owner_page.fill_owner_details(
+        invalid_empty_owner_data['first_name'],
+        invalid_empty_owner_data['last_name'],
+        invalid_empty_owner_data['address'],
+        invalid_empty_owner_data['city'],
+        invalid_empty_owner_data['phone_number']
+    )
+    new_owner_page.submit_form()
 
     expect(new_owner_page.first_name_empty_error).to_have_text("must not be blank")
     expect(new_owner_page.last_name_empty_error).to_have_text("must not be blank")
