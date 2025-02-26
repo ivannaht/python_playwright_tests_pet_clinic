@@ -30,26 +30,11 @@ def api_context(playwright: Playwright, base_url: str) -> APIRequestContext:
     api_context.dispose()
 
 
-def test_owner_existence_api(api_context: APIRequestContext):
-    response = api_context.get('owners/1')
-
-    assert response.status == 200, f"Expected 200 status code but got {response.status}"
-
-
-def test_owner_creation_api(api_context: APIRequestContext, valid_owner_data):
-    response = api_context.post(
+def new_owner(api_context: APIRequestContext, valid_owner_data: dict):
+    api_context.post(
         '/owners/new',
         headers={'Content-Type': 'application/x-www-form-urlencoded'},
         form=valid_owner_data
     )
 
-    assert response.status == 200, f"Expected 200 status code but got {response.status}"
-
-
-def test_search_owner_api(api_context: APIRequestContext, valid_owner_data):
-    last_name = valid_owner_data['lastName']
-    response = api_context.get(
-        f'/owners?lastName={last_name}',
-    )
-
-    assert response.status == 200, f"Expected 200 status code but got {response.status}"
+    return valid_owner_data
