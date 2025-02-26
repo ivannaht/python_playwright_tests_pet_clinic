@@ -1,7 +1,7 @@
 import pytest
 from playwright.sync_api import expect
 from pages.page_objects.find_owner_page import FindOwnerPage
-from steps.api_steps import new_owner
+
 
 
 @pytest.fixture(scope="function")
