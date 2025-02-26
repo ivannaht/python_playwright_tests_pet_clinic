@@ -8,7 +8,7 @@ class FindOwnerPage(BasePage):
         super().__init__(page)
         self.URL = super().URL + "owners/find"
 
-    def load(self):
+    def load(self) -> None:
         self.page.goto(self.URL)
 
     def search_owner_by_last_name(self, last_name: str):
