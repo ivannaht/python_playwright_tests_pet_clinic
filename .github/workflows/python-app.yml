@@ -29,10 +29,15 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install pytest pytest-playwright allure-pytest faker sphinx mypy flake8 black
+          pip install behave pytest-bdd
 
       - name: Install Playwright browsers
         run: |
           python -m playwright install chromium
+
+      - name: Run BDD tests
+        run: |
+          behave
 
       - name: Run Playwright tests with Allure
         run: |
