@@ -10,16 +10,18 @@ def base_url() -> str:
     return BasePage.URL
 
 
-@pytest.fixture(scope='session')
+@pytest.fixture(scope="session")
 def valid_owner_data():
     fake = Faker('en_US')
+
     digit_only_phone_number = re.sub(r'\D', '', fake.phone_number())[:10]
+
     return {
-        'firstName': fake.first_name(),
-        'lastName': fake.last_name(),
-        'address': fake.street_address(),
+        'first_name': fake.first_name(),
+        'last_name': fake.last_name(),
+        'address': fake.address(),
         'city': fake.city(),
-        'telephone': digit_only_phone_number
+        'phone_number': digit_only_phone_number
     }
 
 
@@ -30,7 +32,8 @@ def api_context(playwright: Playwright, base_url: str) -> APIRequestContext:
     api_context.dispose()
 
 
-def new_owner(api_context: APIRequestContext, valid_owner_data: dict):
+@pytest.fixture(scope='session')
+def new_owner(api_context: APIRequestContext, valid_owner_data):
     api_context.post(
         '/owners/new',
         headers={'Content-Type': 'application/x-www-form-urlencoded'},
