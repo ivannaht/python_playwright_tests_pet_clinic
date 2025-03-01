@@ -43,3 +43,11 @@ sphinx-quickstart
 
 Step 13: Install the faker library
 pip install faker
+
+Step 14: Install BDD Frameworks
+pip install behave pytest-bdd
+python.exe -m pip install --upgrade pip
+
+
+Step 15: Set Up PyCharm
+Go to File > Settings > Plugins and install the Gherkin plugin for syntax highlighting and feature file support.
