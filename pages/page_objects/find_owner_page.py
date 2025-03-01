@@ -7,6 +7,7 @@ class FindOwnerPage(BasePage):
     def __init__(self, page: Page) -> None:
         super().__init__(page)
         self.URL = super().URL + "owners/find"
+        self.add_owner_button = page.locator('a.btn.btn-primary', has_text='Add Owner')
 
     def load(self) -> None:
         self.page.goto(self.URL)
@@ -27,3 +28,6 @@ class FindOwnerPage(BasePage):
         details['city'] = self.page.locator('tr:has-text("City") td').inner_text()
         details['telephone'] = self.page.locator('tr:has-text("Telephone") td').inner_text()
         return details
+
+    def click_add_owner(self) -> None:
+        self.add_owner_button.click()
