@@ -1,7 +1,9 @@
 import pytest
+
 from playwright.sync_api import Page
 
 from pages.page_objects.base_page import BasePage
+from pages.page_objects.find_owner_page import FindOwnerPage
 from pages.page_objects.new_owner_page import NewOwnerPage
 
 
@@ -16,6 +18,7 @@ def browser_context_args(browser_context_args):
         },
     }
 
+
 @pytest.fixture()
 def base_page(page: Page):
     return BasePage(page)
@@ -24,3 +27,8 @@ def base_page(page: Page):
 @pytest.fixture()
 def new_owner_page(page: Page):
     return NewOwnerPage(page)
+
+
+@pytest.fixture()
+def find_owner_page(page: Page):
+    return FindOwnerPage(page)

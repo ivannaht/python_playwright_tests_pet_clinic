@@ -1,0 +1,534 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8df42baf-eb07-4cea-bade-073af8f8503e" name="Changes" comment="[branch-1] Added tests for find owner">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/python_playwright_tests_pet_clinic.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/locators/navbar_locators.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/conftest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/page_objects/find_owner_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/page_objects/find_owner_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/steps/api_steps.py" beforeDir="false" afterPath="$PROJECT_DIR$/steps/api_steps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_find_owners.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_find_owners.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="2qr6VBr13F6ERyBuaHw70jkS26d" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python tests.Python tests for first_test.test_get_started_link.executor": "Run",
+    "Python tests.Python tests for first_test.test_has_title.executor": "Run",
+    "Python tests.Python tests for test_find_owners.test_find_owner.executor": "Run",
+    "Python tests.Python tests for test_find_owners.test_find_owner_ui.executor": "Run",
+    "Python tests.Python tests for test_find_owners.test_navbar_link_find_owner.executor": "Run",
+    "Python tests.Python tests for test_first.test_add_owner.executor": "Run",
+    "Python tests.Python tests for test_navbar.test_navbar_find_owners_link.executor": "Run",
+    "Python tests.Python tests for test_navbar.test_navbar_home_link.executor": "Run",
+    "Python tests.Python tests for test_navbar.test_navbar_links_enabled.executor": "Run",
+    "Python tests.Python tests for test_navbar.test_navbar_links_visible.executor": "Run",
+    "Python tests.Python tests for test_navbar.test_navbar_veterinarians_link.executor": "Run",
+    "Python tests.Python tests for test_new_owner.test_add_owner.executor": "Run",
+    "Python tests.Python tests for test_new_owner.test_add_owner_negative.executor": "Run",
+    "Python tests.Python tests for test_new_owner.test_add_owner_positive.executor": "Run",
+    "Python tests.Python tests for test_new_owner.test_main_banner.executor": "Run",
+    "Python tests.Python tests for test_new_owner_api.test_add_owner.executor": "Run",
+    "Python tests.Python tests for test_new_owner_api.test_owner_api.executor": "Run",
+    "Python tests.Python tests for test_new_owner_api.test_owner_creation.executor": "Run",
+    "Python tests.Python tests for test_new_owner_api.test_owner_data.executor": "Run",
+    "Python tests.Python tests for test_new_owner_api.test_search_owners.executor": "Run",
+    "Python tests.Python tests for tests.test_first.executor": "Run",
+    "Python tests.Python tests in test_first.py.executor": "Run",
+    "Python tests.Python tests in test_navbar.py.executor": "Run",
+    "Python tests.Python tests in test_new_owner_api.py.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "branch-2",
+    "settings.editor.selected.configurable": "preferences.externalTools"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ihont\repos\python_playwright_tests_pet_clinic\steps" />
+      <recent name="C:\Users\ihont\repos\python_playwright_tests_pet_clinic" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python tests.Python tests for test_find_owners.test_find_owner_ui">
+    <configuration name="Python tests for test_find_owners.test_find_owner_ui" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="python_playwright_tests_pet_clinic" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_find_owners.test_find_owner_ui&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test_new_owner_api.test_add_owner" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="python_playwright_tests_pet_clinic" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_new_owner_api.test_add_owner&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test_new_owner_api.test_owner_api" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="python_playwright_tests_pet_clinic" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_new_owner_api.test_owner_api&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test_new_owner_api.test_owner_creation" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="python_playwright_tests_pet_clinic" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_new_owner_api.test_owner_creation&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test_new_owner_api.test_owner_data" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="python_playwright_tests_pet_clinic" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_new_owner_api.test_owner_data&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for tests.test_owner_api" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="python_playwright_tests_pet_clinic" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;tests.test_owner_api&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for tests.test_owner_api" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="python_playwright_tests_pet_clinic" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;tests.test_owner_api&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for tests.test_owner_api" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="python_playwright_tests_pet_clinic" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;tests.test_owner_api&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for tests.test_owner_api" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="python_playwright_tests_pet_clinic" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;tests.test_owner_api&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for tests.test_owner_api" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="python_playwright_tests_pet_clinic" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;tests.test_owner_api&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python tests.Python tests for test_find_owners.test_find_owner_ui" />
+        <item itemvalue="Python tests.Python tests for tests.test_owner_api" />
+        <item itemvalue="Python tests.Python tests for tests.test_owner_api" />
+        <item itemvalue="Python tests.Python tests for tests.test_owner_api" />
+        <item itemvalue="Python tests.Python tests for tests.test_owner_api" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-0509580d9d50-746f403e7f0c-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-241.14494.241" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8df42baf-eb07-4cea-bade-073af8f8503e" name="Changes" comment="" />
+      <created>1735408367292</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1735408367292</updated>
+    </task>
+    <task id="LOCAL-00001" summary="[main] Initial commit for pet project set up">
+      <option name="closed" value="true" />
+      <created>1735419748386</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1735419748386</updated>
+    </task>
+    <task id="LOCAL-00002" summary="[main] Updated new owner page">
+      <option name="closed" value="true" />
+      <created>1735470739799</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1735470739799</updated>
+    </task>
+    <task id="LOCAL-00003" summary="[main] Added text files">
+      <option name="closed" value="true" />
+      <created>1735472043600</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1735472043600</updated>
+    </task>
+    <task id="LOCAL-00004" summary="[main] Updated yml file">
+      <option name="closed" value="true" />
+      <created>1735472516976</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1735472516976</updated>
+    </task>
+    <task id="LOCAL-00005" summary="[main] Updated yml file">
+      <option name="closed" value="true" />
+      <created>1735473617972</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1735473617972</updated>
+    </task>
+    <task id="LOCAL-00006" summary="[main] Updated yml file">
+      <option name="closed" value="true" />
+      <created>1735473824795</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1735473824795</updated>
+    </task>
+    <task id="LOCAL-00007" summary="[main] Updated yml file">
+      <option name="closed" value="true" />
+      <created>1735474097839</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1735474097839</updated>
+    </task>
+    <task id="LOCAL-00008" summary="[main] Updated yml file">
+      <option name="closed" value="true" />
+      <created>1735474373380</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1735474373380</updated>
+    </task>
+    <task id="LOCAL-00009" summary="[main] Added allure">
+      <option name="closed" value="true" />
+      <created>1735475871307</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1735475871307</updated>
+    </task>
+    <task id="LOCAL-00010" summary="[main] Added allure">
+      <option name="closed" value="true" />
+      <created>1735476191462</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1735476191462</updated>
+    </task>
+    <task id="LOCAL-00011" summary="[main] Updated for Windows">
+      <option name="closed" value="true" />
+      <created>1735476353450</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1735476353450</updated>
+    </task>
+    <task id="LOCAL-00012" summary="[main] Updated for Windows">
+      <option name="closed" value="true" />
+      <created>1735476517438</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1735476517438</updated>
+    </task>
+    <task id="LOCAL-00013" summary="[main] Updated for Windows">
+      <option name="closed" value="true" />
+      <created>1735476906114</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1735476906114</updated>
+    </task>
+    <task id="LOCAL-00014" summary="[main] Updated for Allure">
+      <option name="closed" value="true" />
+      <created>1735477252813</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1735477252813</updated>
+    </task>
+    <task id="LOCAL-00015" summary="[main] Updated for Allure">
+      <option name="closed" value="true" />
+      <created>1735477506995</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1735477506995</updated>
+    </task>
+    <task id="LOCAL-00016" summary="[main] Updated for Allure">
+      <option name="closed" value="true" />
+      <created>1735477711053</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1735477711053</updated>
+    </task>
+    <task id="LOCAL-00017" summary="[main] Updated requirements.txt">
+      <option name="closed" value="true" />
+      <created>1735480358873</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1735480358873</updated>
+    </task>
+    <task id="LOCAL-00018" summary="[main] Updated requirements.txt">
+      <option name="closed" value="true" />
+      <created>1735480937602</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1735480937603</updated>
+    </task>
+    <task id="LOCAL-00019" summary="[main] Updated allure in yml file">
+      <option name="closed" value="true" />
+      <created>1735480972504</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1735480972504</updated>
+    </task>
+    <task id="LOCAL-00020" summary="[main] Updated files formatting">
+      <option name="closed" value="true" />
+      <created>1735482662781</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1735482662781</updated>
+    </task>
+    <task id="LOCAL-00021" summary="[main] Added Faker">
+      <option name="closed" value="true" />
+      <created>1735484647861</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1735484647861</updated>
+    </task>
+    <task id="LOCAL-00022" summary="[main] Added Faker">
+      <option name="closed" value="true" />
+      <created>1735484932821</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1735484932821</updated>
+    </task>
+    <task id="LOCAL-00023" summary="[main] Updated Faker">
+      <option name="closed" value="true" />
+      <created>1735487347605</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1735487347605</updated>
+    </task>
+    <task id="LOCAL-00024" summary="[main] Added negative scenario for add new owner">
+      <option name="closed" value="true" />
+      <created>1739130226679</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1739130226679</updated>
+    </task>
+    <task id="LOCAL-00025" summary="[main] Updated yml file">
+      <option name="closed" value="true" />
+      <created>1739130797492</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1739130797492</updated>
+    </task>
+    <task id="LOCAL-00026" summary="[brach-1] Updated new owner page">
+      <option name="closed" value="true" />
+      <created>1740499578792</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1740499578792</updated>
+    </task>
+    <task id="LOCAL-00027" summary="[brach-1] Added tests for navbar">
+      <option name="closed" value="true" />
+      <created>1740500155550</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1740500155550</updated>
+    </task>
+    <task id="LOCAL-00028" summary="[brach-1] Added api tests">
+      <option name="closed" value="true" />
+      <created>1740508916807</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1740508916807</updated>
+    </task>
+    <task id="LOCAL-00029" summary="[branch-1] Added api tests">
+      <option name="closed" value="true" />
+      <created>1740509109648</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1740509109648</updated>
+    </task>
+    <task id="LOCAL-00030" summary="[branch-1] Added tests for find owner">
+      <option name="closed" value="true" />
+      <created>1740592707422</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1740592707422</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="[main] Initial commit for pet project set up" />
+    <MESSAGE value="[main] Updated new owner page" />
+    <MESSAGE value="[main] Added text files" />
+    <MESSAGE value="[main] Added allure" />
+    <MESSAGE value="[main] Updated for Windows" />
+    <MESSAGE value="[main] Updated for Allure" />
+    <MESSAGE value="[main] Updated requirements.txt" />
+    <MESSAGE value="[main] Updated allure in yml file" />
+    <MESSAGE value="[main] Updated files formatting" />
+    <MESSAGE value="[main] Added Faker" />
+    <MESSAGE value="[main] Updated Faker" />
+    <MESSAGE value="[main] Added negative scenario for add new owner" />
+    <MESSAGE value="[main] Updated yml file" />
+    <MESSAGE value="[brach-1] Updated new owner page" />
+    <MESSAGE value="[brach-1] Added tests for navbar" />
+    <MESSAGE value="[brach-1] Added api tests" />
+    <MESSAGE value="[branch-1] Added api tests" />
+    <MESSAGE value="[branch-1] Added tests for find owner" />
+    <option name="LAST_COMMIT_MESSAGE" value="[branch-1] Added tests for find owner" />
+  </component>
+</project>

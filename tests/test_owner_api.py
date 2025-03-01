@@ -10,7 +10,7 @@ def base_url() -> str:
     return BasePage.URL
 
 
-@pytest.fixture(scope="module")
+@pytest.fixture(scope='session')
 def valid_owner_data():
     fake = Faker('en_US')
     digit_only_phone_number = re.sub(r'\D', '', fake.phone_number())[:10]
@@ -23,7 +23,7 @@ def valid_owner_data():
     }
 
 
-@pytest.fixture
+@pytest.fixture(scope='session')
 def api_context(playwright: Playwright, base_url: str) -> APIRequestContext:
     api_context = playwright.request.new_context(base_url=base_url)
     yield api_context
@@ -51,6 +51,5 @@ def test_search_owner_api(api_context: APIRequestContext, valid_owner_data):
     response = api_context.get(
         f'/owners?lastName={last_name}',
     )
-    print(valid_owner_data['lastName'])
 
     assert response.status == 200, f"Expected 200 status code but got {response.status}"
